@@ -1,8 +1,6 @@
 # Devcamp portfolio apllication
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
+some content here
 Things you may want to cover:
 
 * Ruby version
