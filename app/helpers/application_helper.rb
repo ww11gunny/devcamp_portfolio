@@ -15,5 +15,7 @@ module ApplicationHelper
      end 
   end
 
-
+  def copyright_generator
+    PillingViewTool::Renderer.copyright 'William Pilling', 'All rights reserved'
+  end 
 end
