@@ -7,12 +7,6 @@ GIT
       popper_js (>= 1.9.9, < 2.0)
       sass (>= 3.4.19)
 
-GIT
-  remote: https://github.com/ww11gunny/pilling_view_tool
-  revision: 84ef2005867615a1828fcf396e1ae1566daa89bf
-  specs:
-    pilling_view_tool (0.1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -109,6 +103,7 @@ GEM
       mini_portile2 (~> 2.1.0)
     orm_adapter (0.5.0)
     pg (0.20.0)
+    pilling_view_tool (0.1.0)
     popper_js (1.9.9)
     pry (0.10.4)
       coderay (~> 1.1.0)
@@ -204,7 +199,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   pg (~> 0.18)
-  pilling_view_tool!
+  pilling_view_tool (~> 0.1.0)
   pry-byebug
   puma (~> 3.0)
   rails (~> 5.0.2)
