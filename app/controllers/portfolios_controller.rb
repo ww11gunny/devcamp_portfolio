@@ -47,10 +47,8 @@ class PortfoliosController < ApplicationController
   def show
     
   end
-  def destroy
-    # Perform the lookup
-    
-
+  
+     def destroy
     # Destroy/delete the record
     @portfolio_item.destroy
 
