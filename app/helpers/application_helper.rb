@@ -45,6 +45,11 @@ module ApplicationHelper
         title: 'Portfolio'
 
       },
+      {
+        url: tech_news_path,
+        title: 'Tech News'
+
+      },
 
     ]
   end
