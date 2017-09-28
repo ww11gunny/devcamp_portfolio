@@ -8,8 +8,52 @@
         <%= image_tag "profilepic.jpeg", width: 300, alt: "Profile Image", class: 'profile-img' %>
       </div>
       <div class = "col-md-8">
-      <p>I might just be starting out as a developer but i belive that the best way to go about developing a project is clear communication thoughout the prodject to ensure I deliver what the customer wants and needs. </p>
+      <p>I might just be starting out as a developer but i belive that the best way to go about developing a project is clear communication thoughout the prodject to ensure I deliver what the customer wants and needs. 
+      </p>
+      <p>
+        <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#jobHistory"
+            aria-expanded="false"
+            aria-controler="jobHistory"
+          >
+            Job History
+          </button>
 
+          <button
+            class="btn btn-primary"
+            type="button"
+            data-toggle="collapse"
+            data-target="#education"
+            aria-expanded="false"
+            aria-controler="education"
+          >
+            Education
+          </button>
+        </p>
+
+        <p>
+          <div class="collapse" id="jobHistory">
+            <div class="card card-block">
+              Ellwood staffing
+            </div>
+            <div class="card card-block">
+              Overnight stocker Walmart
+            </div>
+          </div>
+
+          <div class="collapse" id="education">
+            <div class="card card-block">
+              Carbon High
+            </div>
+            <div class="card card-block">
+              Botega Tech
+            </div>
+
+          </div>
+        </p>
       </div>
     </div>
   </div>
