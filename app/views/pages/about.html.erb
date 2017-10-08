@@ -1,17 +1,37 @@
 <div class="app-card-container">
   <div class="card">
     <h1>About Me</h1>
+
     <hr>
-    <div class = "row">
-      <div class = "col-md-4">
-   
-        <%= image_tag "profilepic.jpeg", width: 300, alt: "Profile Image", class: 'profile-img' %>
+
+    <div class="row">
+      <div class="col-md-4">
+        <%= image_tag "profilepic.jpg", width: 300, alt: "profile image", class: 'profile-img' %>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+            <div class="skill">
+              <h4><%= skill.title %></h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  role="progressbar"
+                  aria-valuenow="<%= skill.percent_utilised %>"
+                  aria-valuemax="100"
+                  style="width: <%= skill.percent_utilised %>%"
+                ></div>
+              </div>
+            </div>
+          <% end %>
+        </div>
       </div>
-      <div class = "col-md-8">
-      <p>I might just be starting out as a developer but i belive that the best way to go about developing a project is clear communication thoughout the prodject to ensure I deliver what the customer wants and needs. 
-      </p>
-      <p>
-        <button
+
+      <div class="col-md-8">
+        <p>I might just be starting out as a developer but i belive that the best way to go about developing a project is clear communication thoughout the prodject to ensure I deliver what the customer wants and needs. </p
+
+        
+
+        <p>
+          <button
             class="btn btn-primary"
             type="button"
             data-toggle="collapse"
@@ -37,27 +57,26 @@
         <p>
           <div class="collapse" id="jobHistory">
             <div class="card card-block">
-              Ellwood staffing
+              Ellwod staffing 2 years
             </div>
             <div class="card card-block">
-              Overnight stocker Walmart
+              Walmart 4 years
             </div>
           </div>
 
           <div class="collapse" id="education">
             <div class="card card-block">
-              Carbon High
+              Carbon high
             </div>
             <div class="card card-block">
-              Botega Tech
+              Botega tech
             </div>
-
+            
           </div>
         </p>
       </div>
     </div>
   </div>
-
 </div>
 
 
