@@ -9,7 +9,41 @@
   
     <%= f.text_field :title, class: 'form-control', placeholder: "title" %>
   </div>
+  <div class="form-group">
+    <%= f.label :topic_id %>
+    <% begin%>
+      <%= f.collection_select(:topic_id, Topic.all, :id, :title,
+                                {
+                                  
+                                    selected: blog.topic.id,
+                                    
+                                  
+                                  
+                                },
+                                class: 'form-control'
+                              )
+      %>
+    <% rescue %>
+      <%= f.collection_select(:topic_id, Topic.all, :id, :title,
+                                {
+                                  
+                                    selected: blog.topic,
+                                    
+                                  
+                                  
+                                },
+                                class: 'form-control'
+                              )
+      %>
+     <% end %> 
+  </div>
+  <div class="form-group">
+    <%= f.radio_button :Status, 'draft' %>
+    <%= f.label :Status, 'Draft' %>
 
+    <%= f.radio_button :Status, 'published' %>
+    <%= f.label :Status, 'Published' %>
+  </div>
   <div class="form-group">
 
     <%= f.text_area :Body, class: 'form-control',rows: 15, placeholder: "body" %>
